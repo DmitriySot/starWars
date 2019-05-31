@@ -1,0 +1,8 @@
+.error-indicator {
+    margin: 0 auto;
+    text-align: center;
+    color: red;
+}
+.error-indicator img{
+    width: 50px;
+}

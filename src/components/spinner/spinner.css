@@ -1,0 +1,110 @@
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes configure-clockwise {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes configure-xclockwise {
+    0% {
+        transform: rotate(45deg);
+    }
+    25% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: rotate(-135deg);
+    }
+    75% {
+        transform: rotate(-225deg);
+    }
+    100% {
+        transform: rotate(-315deg);
+    }
+}
+
+@keyframes pulse {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: .25;
+        transform: scale(.75);
+    }
+}
+
+.spinner-box {
+    margin: 0 auto;
+}
+
+.solar-system {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orbit {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffffa5;
+    border-radius: 50%;
+}
+
+.earth-orbit {
+    width: 115px;
+    height: 115px;
+    -webkit-animation: spin 12s linear 0s infinite;
+}
+
+.venus-orbit {
+    width: 70px;
+    height: 70px;
+    -webkit-animation: spin 7.4s linear 0s infinite;
+}
+
+.mercury-orbit {
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 3s linear 0s infinite;
+}
+
+.planet {
+    position: absolute;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3ff9dc;
+}
+
+.sun {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ffab91;
+}
